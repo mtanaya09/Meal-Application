@@ -72,8 +72,6 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Third App',
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
-        accentColor: Colors.yellow,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
@@ -87,7 +85,7 @@ class _MyAppState extends State<MyApp> {
               fontSize: 18,
               fontWeight: FontWeight.bold,
               fontFamily: 'RobotoCondensed',
-            )),
+            )), colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange).copyWith(secondary: Colors.yellow),
       ),
       // home: CategoriesScreen(),
       routes: {

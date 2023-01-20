@@ -40,11 +40,11 @@ class _CategoriesMealsScreenState extends State<CategoriesMealsScreen> {
   }
 
   //function that will remove meal item
-  void _removeMeal(String mealId) {
-    setState(() {
-      displayedMeals.removeWhere((meal) => meal.id == mealId);
-    });
-  }
+  // void _removeMeal(String mealId) {
+  //   setState(() {
+  //     displayedMeals.removeWhere((meal) => meal.id == mealId);
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
